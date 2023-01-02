@@ -48,8 +48,15 @@
     <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
       <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="MySql.Data, Version=8.0.31.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.8.0.31\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json.Bson, Version=1.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.Bson.1.0.2\lib\net45\Newtonsoft.Json.Bson.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
@@ -84,18 +91,66 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="covid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="covid.Designer.cs">
+      <DependentUpon>covid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hesapYonetici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hesapYonetici.Designer.cs">
+      <DependentUpon>hesapYonetici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="iletisim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="iletisim.Designer.cs">
+      <DependentUpon>iletisim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odeme.Designer.cs">
+      <DependentUpon>odeme.cs</DependentUpon>
+    </Compile>
     <Compile Include="Baglanti.cs" />
+    <Compile Include="duyuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="duyuru.Designer.cs">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calisanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calisanlar.Designer.cs">
+      <DependentUpon>calisanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="resimler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resimler.Designer.cs">
+      <DependentUpon>resimler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siteSakinlerininBilgileri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siteSakinlerininBilgileri.Designer.cs">
+      <DependentUpon>siteSakinlerininBilgileri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tanitim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tanitim.Designer.cs">
+      <DependentUpon>tanitim.cs</DependentUpon>
+    </Compile>
     <Compile Include="hesap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="hesap.Designer.cs">
       <DependentUpon>hesap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="hesapEkle.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="hesapEkle.Designer.cs">
-      <DependentUpon>hesapEkle.cs</DependentUpon>
     </Compile>
     <Compile Include="kullaniciGiris.cs">
       <SubType>Form</SubType>
@@ -111,11 +166,35 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="covid.resx">
+      <DependentUpon>covid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hesapYonetici.resx">
+      <DependentUpon>hesapYonetici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="iletisim.resx">
+      <DependentUpon>iletisim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calisanlar.resx">
+      <DependentUpon>calisanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odeme.resx">
+      <DependentUpon>odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="duyuru.resx">
+      <DependentUpon>duyuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resimler.resx">
+      <DependentUpon>resimler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siteSakinlerininBilgileri.resx">
+      <DependentUpon>siteSakinlerininBilgileri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tanitim.resx">
+      <DependentUpon>tanitim.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hesap.resx">
       <DependentUpon>hesap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="hesapEkle.resx">
-      <DependentUpon>hesapEkle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="kullaniciGiris.resx">
       <DependentUpon>kullaniciGiris.cs</DependentUpon>
@@ -151,10 +230,55 @@
     <None Include="Resources\add-group.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\json\corona_json.json" />
     <None Include="Resources\user.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20201209112218_5fd0893a8edc0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\e1d6ce62-86d8-42ae-8c35-7e199d22dbd2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakyapi_prestif_optimum_avm_01.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bakyapi_prestif_optimum_avm_02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prestij-optimum-projesi-bursa-osmangazi-1698-151759.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fd2a7e5c-a85b-4a68-ba7e-ad873a980f78.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

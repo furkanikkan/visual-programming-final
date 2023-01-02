@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data;
 using MySql.Data.MySqlClient;
 
 namespace siteYonetimi
@@ -20,33 +19,63 @@ namespace siteYonetimi
         }
        
         Baglanti baglanti = new Baglanti();
-       
-        public string adSoyad;
-        public string yetki;
+
+        public int Id;
+        public string ad;
+        public string soyad;
+        public string aracPlaka;
+        public string telefonNo;
+        public string kullaniciAdi;
+        public string Sifre;
+
         private void button1_Click(object sender, EventArgs e)
         {
             kullaniciArayuzu kullaniciArayuzu = new kullaniciArayuzu(this);
-            baglanti.BaglantiAc();
-            MySqlCommand girisSorgusu = new MySqlCommand("SELECT * FROM yoneticiler WHERE yoneticiKullaniciAdi='"+textBox1.Text+ "' AND yoneticiSifre='"+textBox2.Text+"'", baglanti.connection);
+            if (baglanti.connection.State == ConnectionState.Closed)
+            { 
+                baglanti.BaglantiAc();
+            }
+            MySqlCommand girisSorgusu = new MySqlCommand("SELECT * FROM kullanicilar WHERE kullaniciAdi='"+tBkullaniciAdıGiris.Text+ "' AND Sifre='"+tBsifreGiris.Text+"'", baglanti.connection);
             MySqlDataReader veriOku=girisSorgusu.ExecuteReader();
             if (veriOku.Read())
             {
-                adSoyad = veriOku["yoneticiAd"].ToString() + " " + veriOku["yoneticiSoyad"].ToString();
-                yetki = veriOku["yoneticiYetki"].ToString();
+                Id = Convert.ToInt32(veriOku["Id"]);
+                ad = veriOku["Ad"].ToString();
+                soyad = veriOku["Soyad"].ToString();
+                aracPlaka = veriOku["aracPlaka"].ToString();
+                telefonNo = veriOku["telefonNo"].ToString();
+                kullaniciAdi = veriOku["kullaniciAdi"].ToString();
+                Sifre = veriOku["Sifre"].ToString();
                 this.Hide();
                 kullaniciArayuzu.Show();
+                
             }
             else
             {
                 MessageBox.Show("Kullanıcı bulunamadı");
             }
-
             baglanti.BaglantiKapat();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
              
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void tBkullaniciAdıGiris_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

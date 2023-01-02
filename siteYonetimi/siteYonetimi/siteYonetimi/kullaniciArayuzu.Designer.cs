@@ -28,210 +28,217 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.buttonResimler = new System.Windows.Forms.Button();
+            this.gBadSoyadYetki = new System.Windows.Forms.GroupBox();
+            this.labelYetki = new System.Windows.Forms.Label();
+            this.labelSoyad = new System.Windows.Forms.Label();
+            this.labelAd = new System.Windows.Forms.Label();
+            this.buttonCalisanlar = new System.Windows.Forms.Button();
+            this.buttonAidatOdeme = new System.Windows.Forms.Button();
+            this.ButtonSiteSakinleriBilgi = new System.Windows.Forms.Button();
+            this.buttonDuyurular = new System.Windows.Forms.Button();
+            this.buttonSiteTanitimi = new System.Windows.Forms.Button();
+            this.buttonIletisim = new System.Windows.Forms.Button();
+            this.buttonHesapCıkıs = new System.Windows.Forms.Button();
+            this.buttonUyeİslemleri = new System.Windows.Forms.Button();
+            this.buttonCovidTablosu = new System.Windows.Forms.Button();
+            this.gBadSoyadYetki.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // buttonResimler
             // 
-            this.button1.Location = new System.Drawing.Point(130, 97);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 47);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Üye Takibi";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonResimler.Location = new System.Drawing.Point(133, 212);
+            this.buttonResimler.Name = "buttonResimler";
+            this.buttonResimler.Size = new System.Drawing.Size(97, 47);
+            this.buttonResimler.TabIndex = 9;
+            this.buttonResimler.Text = "Resimler";
+            this.buttonResimler.UseVisualStyleBackColor = true;
+            this.buttonResimler.Click += new System.EventHandler(this.buttonResimler_Click);
             // 
-            // groupBox1
+            // gBadSoyadYetki
             // 
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(12, 6);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(189, 75);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            this.gBadSoyadYetki.Controls.Add(this.labelYetki);
+            this.gBadSoyadYetki.Controls.Add(this.labelSoyad);
+            this.gBadSoyadYetki.Controls.Add(this.labelAd);
+            this.gBadSoyadYetki.Location = new System.Drawing.Point(161, 12);
+            this.gBadSoyadYetki.Name = "gBadSoyadYetki";
+            this.gBadSoyadYetki.Size = new System.Drawing.Size(189, 75);
+            this.gBadSoyadYetki.TabIndex = 1;
+            this.gBadSoyadYetki.TabStop = false;
+            this.gBadSoyadYetki.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label3
+            // labelYetki
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(6, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Yetki";
+            this.labelYetki.AutoSize = true;
+            this.labelYetki.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelYetki.Location = new System.Drawing.Point(39, 41);
+            this.labelYetki.Name = "labelYetki";
+            this.labelYetki.Size = new System.Drawing.Size(50, 20);
+            this.labelYetki.TabIndex = 2;
+            this.labelYetki.Text = "Yetki";
             // 
-            // label1
+            // labelSoyad
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(6, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "AdSoyad";
+            this.labelSoyad.AutoSize = true;
+            this.labelSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelSoyad.Location = new System.Drawing.Point(88, 12);
+            this.labelSoyad.Name = "labelSoyad";
+            this.labelSoyad.Size = new System.Drawing.Size(60, 20);
+            this.labelSoyad.TabIndex = 0;
+            this.labelSoyad.Text = "Soyad";
             // 
-            // button2
+            // labelAd
             // 
-            this.button2.Location = new System.Drawing.Point(12, 97);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(97, 47);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Muhasebe";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.labelAd.AutoSize = true;
+            this.labelAd.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelAd.Location = new System.Drawing.Point(6, 12);
+            this.labelAd.Name = "labelAd";
+            this.labelAd.Size = new System.Drawing.Size(31, 20);
+            this.labelAd.TabIndex = 0;
+            this.labelAd.Text = "Ad";
             // 
-            // button3
+            // buttonCalisanlar
             // 
-            this.button3.Location = new System.Drawing.Point(12, 172);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(97, 47);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Gelir/Gider";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonCalisanlar.Location = new System.Drawing.Point(12, 159);
+            this.buttonCalisanlar.Name = "buttonCalisanlar";
+            this.buttonCalisanlar.Size = new System.Drawing.Size(97, 47);
+            this.buttonCalisanlar.TabIndex = 5;
+            this.buttonCalisanlar.Text = "Çalışanlar";
+            this.buttonCalisanlar.UseVisualStyleBackColor = true;
+            this.buttonCalisanlar.Click += new System.EventHandler(this.buttonCalisanlar_Click);
             // 
-            // button4
+            // buttonAidatOdeme
             // 
-            this.button4.Location = new System.Drawing.Point(250, 172);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(97, 47);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Giriş/Çıkışlar";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.buttonAidatOdeme.Location = new System.Drawing.Point(12, 106);
+            this.buttonAidatOdeme.Name = "buttonAidatOdeme";
+            this.buttonAidatOdeme.Size = new System.Drawing.Size(97, 47);
+            this.buttonAidatOdeme.TabIndex = 2;
+            this.buttonAidatOdeme.Text = "Aidat Ödeme";
+            this.buttonAidatOdeme.UseVisualStyleBackColor = true;
+            this.buttonAidatOdeme.Click += new System.EventHandler(this.buttonAidatOdeme_Click);
             // 
-            // button5
+            // ButtonSiteSakinleriBilgi
             // 
-            this.button5.Location = new System.Drawing.Point(250, 97);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(97, 47);
-            this.button5.TabIndex = 0;
-            this.button5.Text = "Duyurular";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.ButtonSiteSakinleriBilgi.Location = new System.Drawing.Point(253, 106);
+            this.ButtonSiteSakinleriBilgi.Name = "ButtonSiteSakinleriBilgi";
+            this.ButtonSiteSakinleriBilgi.Size = new System.Drawing.Size(97, 47);
+            this.ButtonSiteSakinleriBilgi.TabIndex = 4;
+            this.ButtonSiteSakinleriBilgi.Text = "Sakinleri Bilgileri";
+            this.ButtonSiteSakinleriBilgi.UseVisualStyleBackColor = true;
+            this.ButtonSiteSakinleriBilgi.Click += new System.EventHandler(this.ButtonSiteSakinleriBilgi_Click);
             // 
-            // button6
+            // buttonDuyurular
             // 
-            this.button6.Location = new System.Drawing.Point(130, 172);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(97, 47);
-            this.button6.TabIndex = 0;
-            this.button6.Text = "Daire Bilgileri";
-            this.button6.UseVisualStyleBackColor = true;
+            this.buttonDuyurular.Location = new System.Drawing.Point(133, 106);
+            this.buttonDuyurular.Name = "buttonDuyurular";
+            this.buttonDuyurular.Size = new System.Drawing.Size(97, 47);
+            this.buttonDuyurular.TabIndex = 3;
+            this.buttonDuyurular.Text = "Duyurular";
+            this.buttonDuyurular.UseVisualStyleBackColor = true;
+            this.buttonDuyurular.Click += new System.EventHandler(this.buttonDuyurular_Click);
             // 
-            // button7
+            // buttonSiteTanitimi
             // 
-            this.button7.Location = new System.Drawing.Point(12, 249);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(97, 47);
-            this.button7.TabIndex = 0;
-            this.button7.Text = "Üye Yetkilendirme";
-            this.button7.UseVisualStyleBackColor = true;
+            this.buttonSiteTanitimi.Location = new System.Drawing.Point(12, 212);
+            this.buttonSiteTanitimi.Name = "buttonSiteTanitimi";
+            this.buttonSiteTanitimi.Size = new System.Drawing.Size(97, 47);
+            this.buttonSiteTanitimi.TabIndex = 8;
+            this.buttonSiteTanitimi.Text = "Site Tanıtımı";
+            this.buttonSiteTanitimi.UseVisualStyleBackColor = true;
+            this.buttonSiteTanitimi.Click += new System.EventHandler(this.buttonSiteTanitimi_Click);
             // 
-            // button8
+            // buttonIletisim
             // 
-            this.button8.Location = new System.Drawing.Point(250, 249);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(97, 47);
-            this.button8.TabIndex = 0;
-            this.button8.Text = "İletişim";
-            this.button8.UseVisualStyleBackColor = true;
+            this.buttonIletisim.Location = new System.Drawing.Point(133, 159);
+            this.buttonIletisim.Name = "buttonIletisim";
+            this.buttonIletisim.Size = new System.Drawing.Size(97, 47);
+            this.buttonIletisim.TabIndex = 6;
+            this.buttonIletisim.Text = "İletişim";
+            this.buttonIletisim.UseVisualStyleBackColor = true;
+            this.buttonIletisim.Click += new System.EventHandler(this.buttonIletisim_Click);
             // 
-            // button9
+            // buttonHesapCıkıs
             // 
-            this.button9.Location = new System.Drawing.Point(130, 249);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(97, 47);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Çalışanlar";
-            this.button9.UseVisualStyleBackColor = true;
+            this.buttonHesapCıkıs.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonHesapCıkıs.Location = new System.Drawing.Point(253, 213);
+            this.buttonHesapCıkıs.Name = "buttonHesapCıkıs";
+            this.buttonHesapCıkıs.Size = new System.Drawing.Size(97, 46);
+            this.buttonHesapCıkıs.TabIndex = 10;
+            this.buttonHesapCıkıs.Text = "Hesap Çıkış";
+            this.buttonHesapCıkıs.UseVisualStyleBackColor = true;
+            this.buttonHesapCıkıs.Click += new System.EventHandler(this.buttonHesapCıkıs_Click);
             // 
-            // button11
+            // buttonUyeİslemleri
             // 
-            this.button11.BackgroundImage = global::siteYonetimi.Properties.Resources.user;
-            this.button11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button11.Location = new System.Drawing.Point(207, 12);
-            this.button11.Name = "button11";
-            this.button11.Padding = new System.Windows.Forms.Padding(0, 0, 5, 4);
-            this.button11.Size = new System.Drawing.Size(71, 79);
-            this.button11.TabIndex = 0;
-            this.button11.Text = "Hesap";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click_1);
+            this.buttonUyeİslemleri.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonUyeİslemleri.BackgroundImage = global::siteYonetimi.Properties.Resources.user;
+            this.buttonUyeİslemleri.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.buttonUyeİslemleri.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.buttonUyeİslemleri.ImageKey = "(yok)";
+            this.buttonUyeİslemleri.Location = new System.Drawing.Point(12, 12);
+            this.buttonUyeİslemleri.Name = "buttonUyeİslemleri";
+            this.buttonUyeİslemleri.Padding = new System.Windows.Forms.Padding(0, 0, 5, 4);
+            this.buttonUyeİslemleri.Size = new System.Drawing.Size(143, 88);
+            this.buttonUyeİslemleri.TabIndex = 1;
+            this.buttonUyeİslemleri.Text = "Üye İşlemleri";
+            this.buttonUyeİslemleri.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.buttonUyeİslemleri.UseVisualStyleBackColor = false;
+            this.buttonUyeİslemleri.Click += new System.EventHandler(this.buttonUyeİslemleri_Click);
             // 
-            // button10
+            // buttonCovidTablosu
             // 
-            this.button10.BackgroundImage = global::siteYonetimi.Properties.Resources.add_group;
-            this.button10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button10.Location = new System.Drawing.Point(284, 12);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(63, 79);
-            this.button10.TabIndex = 0;
-            this.button10.Text = "Kullanıcı Ekle";
-            this.button10.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
+            this.buttonCovidTablosu.Location = new System.Drawing.Point(253, 160);
+            this.buttonCovidTablosu.Name = "buttonCovidTablosu";
+            this.buttonCovidTablosu.Size = new System.Drawing.Size(97, 47);
+            this.buttonCovidTablosu.TabIndex = 7;
+            this.buttonCovidTablosu.Text = "Covid Tablosu";
+            this.buttonCovidTablosu.UseVisualStyleBackColor = true;
+            this.buttonCovidTablosu.Click += new System.EventHandler(this.buttonCovidTablosu_Click);
             // 
             // kullaniciArayuzu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 309);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
+            this.CancelButton = this.buttonHesapCıkıs;
+            this.ClientSize = new System.Drawing.Size(364, 275);
+            this.Controls.Add(this.gBadSoyadYetki);
+            this.Controls.Add(this.buttonCalisanlar);
+            this.Controls.Add(this.buttonUyeİslemleri);
+            this.Controls.Add(this.buttonDuyurular);
+            this.Controls.Add(this.buttonSiteTanitimi);
+            this.Controls.Add(this.buttonHesapCıkıs);
+            this.Controls.Add(this.buttonIletisim);
+            this.Controls.Add(this.ButtonSiteSakinleriBilgi);
+            this.Controls.Add(this.buttonAidatOdeme);
+            this.Controls.Add(this.buttonCovidTablosu);
+            this.Controls.Add(this.buttonResimler);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "kullaniciArayuzu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Menü";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.kullaniciArayuzu_FormClosing);
             this.Load += new System.EventHandler(this.kullaniciArayuzu_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gBadSoyadYetki.ResumeLayout(false);
+            this.gBadSoyadYetki.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button11;
+        private System.Windows.Forms.Button buttonResimler;
+        private System.Windows.Forms.GroupBox gBadSoyadYetki;
+        private System.Windows.Forms.Label labelAd;
+        private System.Windows.Forms.Label labelYetki;
+        private System.Windows.Forms.Button buttonCalisanlar;
+        private System.Windows.Forms.Button buttonAidatOdeme;
+        private System.Windows.Forms.Button ButtonSiteSakinleriBilgi;
+        private System.Windows.Forms.Button buttonDuyurular;
+        private System.Windows.Forms.Button buttonSiteTanitimi;
+        private System.Windows.Forms.Button buttonIletisim;
+        private System.Windows.Forms.Button buttonHesapCıkıs;
+        private System.Windows.Forms.Button buttonUyeİslemleri;
+        private System.Windows.Forms.Label labelSoyad;
+        private System.Windows.Forms.Button buttonCovidTablosu;
     }
 }
