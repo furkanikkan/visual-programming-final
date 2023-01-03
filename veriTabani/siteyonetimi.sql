@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: localhost
--- Üretim Zamanı: 02 Oca 2023, 20:42:25
+-- Üretim Zamanı: 03 Oca 2023, 01:09:20
 -- Sunucu sürümü: 8.0.17
 -- PHP Sürümü: 7.3.10
 
@@ -52,7 +52,7 @@ CREATE TABLE `daireler` (
 --
 
 INSERT INTO `daireler` (`daireID`, `daireNo`, `aidatBorcu`) VALUES
-(1, 1, 100.00),
+(1, 1, 50.00),
 (2, 2, 100.00),
 (6, 3, 100.00),
 (7, 4, 100.00);
@@ -111,9 +111,8 @@ CREATE TABLE `kullanicilar` (
 --
 
 INSERT INTO `kullanicilar` (`Id`, `daireID`, `Ad`, `Soyad`, `kullaniciAdi`, `Sifre`, `aracPlaka`, `telefonNo`) VALUES
-(21, 1, 'Furkan', 'İkkan', 'fatma', '123', '16abc443', '555444444'),
-(22, 2, 'Furkan', 'İkkans', 'furkan', '123', '16abc445', '555444444'),
-(31, 6, 'Ebru', 'Gündeş', 'ebru', '123', '34 asd 171', '05556541444');
+(21, 1, 'Furkan', 'İkkan', 'furkan', '123', '16abc443', '555444444'),
+(22, 2, 'Fatma', 'Turgut', 'fatma', '123', '16abc445', '555444444');
 
 -- --------------------------------------------------------
 
